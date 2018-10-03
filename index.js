@@ -14,6 +14,7 @@ function addToCart(item) {
     itemName: item,
     itemPrice: Math.floor(Math.random)
   }
+  cart.push(cartItem)
 }
 
 function viewCart() {
