@@ -24,15 +24,24 @@ function viewCart() {
 
   if (!cart.length) { return 'Your shopping cart is empty.'}
 
+  * 1 item — `
+  In your cart, you have bananas at $17.`
+  * 2 items — `
+  In your cart, you have bananas at $17, and pancake batter at $5.`
+  * 3+ items —
+  `In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.`
+
+
   var str = 'In your cart, you have '
   for (let i = 0; i < cart.length; i++) {
       let item = cart[i]
       str += `${item.itemName} at $${itemPrice}`
-      if (!i) {  // i = 0, first item
+      if (item === cart[-1]) {
 
       }
   }
-
+  str += "."
+  return str
 }
 
 function total() {
