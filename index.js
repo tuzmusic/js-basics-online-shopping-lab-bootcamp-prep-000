@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  var cartItem = Object {
+  var cartItem = {
     itemName: item,
     itemPrice: Math.floor(Math.random)
   }
