@@ -42,7 +42,7 @@ function viewCart() {
             str += "and "
         }
       }
-      str += `${item.itemName} at $${itemPrice}`
+      str += `${item.itemName} at $${itemitemPrice}`
   }
   str += "."
   return str
