@@ -40,9 +40,9 @@ function viewCart() {
         str+= ", "
         if (item === cart[-1]) {
             str += "and "
-        }        
+        }
       }
-      str += `${item.itemName} at $${itemPrice}`     
+      str += `${item.itemName} at $${itemPrice}`
   }
   str += "."
   return str
