@@ -36,7 +36,7 @@ function viewCart() {
   for (let i = 0; i < cart.length; i++) {
       let item = cart[i]
 
-      if (cart.length > 1) {
+      if (i > 0) {
         str+= ", "
         if (item === cart[-1]) {
             str += "and "
