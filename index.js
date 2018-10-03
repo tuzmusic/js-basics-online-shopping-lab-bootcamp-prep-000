@@ -41,7 +41,7 @@ function viewCart() {
 }
 
 function total() {
-  var total = 0 
+  var total = 0
   for (var i = 0; i < cart.length; i++) {
     total += cart[i].itemPrice
   }
@@ -49,7 +49,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  if (!cart.contains(item)) { return 'That item is not in your cart.'}
 }
 
 function placeOrder(cardNumber) {
