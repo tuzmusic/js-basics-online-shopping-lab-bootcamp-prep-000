@@ -49,7 +49,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (!cart.contains(item)) { return 'That item is not in your cart.'}
+  if (!cart.indexOf(item)) { return 'That item is not in your cart.'}
 }
 
 function placeOrder(cardNumber) {
