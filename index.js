@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
   var cartItem = {
     itemName: item,
-  itemPrice: Math.floor(Math.random() * 100)
+    itemPrice: Math.floor(Math.random() * 100)
   }
   cart.push(cartItem)
   return `${item} has been added to your cart.`
@@ -59,9 +59,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-// NOTE: FIX!!!
   if (!cardNumber) {
-    console.log("Sorry, we don't have a credit card on file for you.");
     return "Sorry, we don't have a credit card on file for you."
   }
   var str = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
