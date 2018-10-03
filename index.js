@@ -23,14 +23,6 @@ function viewCart() {
   debugger;
 
   if (!cart.length) { return 'Your shopping cart is empty.'}
-/*
-  * 1 item — `
-  In your cart, you have bananas at $17.`
-  * 2 items — `
-  In your cart, you have bananas at $17, and pancake batter at $5.`
-  * 3+ items —
-  `In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.`
-*/
 
   var str = 'In your cart, you have '
   for (let i = 0; i < cart.length; i++) {
@@ -38,7 +30,7 @@ function viewCart() {
 
       if (i > 0) {
         str+= ", "
-        if (item === cart[length-1]) {
+        if (item === cart[cart.length-1]) {
             str += "and "
         }
       }
@@ -49,7 +41,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var total = 0 
+  for (var i = 0; i < cart.length; i++) {
+    total += cart[i].itemPrice
+  }
+  return total
 }
 
 function removeFromCart(item) {
