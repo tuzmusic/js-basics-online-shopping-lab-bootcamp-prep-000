@@ -38,7 +38,7 @@ function viewCart() {
 
       if (i > 0) {
         str+= ", "
-        if (item === cart[-1]) {
+        if (item === cart[length-1]) {
             str += "and "
         }
       }
